@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ZoomIn, Filter } from 'lucide-react';
-import SectionTitle from '../components/common/SectionTitle';
+import { X, ZoomIn } from 'lucide-react';
 import { galleryImages, GALLERY_CATEGORIES } from '../data/galleryData';
 
 /* ── Gallery Page ────────────────────────────────────────── */

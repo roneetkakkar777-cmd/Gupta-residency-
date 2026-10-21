@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { HOTEL, NAV_LINKS } from '../../utils/constants';
 
 import Logo from './Logo';
@@ -10,9 +10,12 @@ import Logo from './Logo';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
 
-  useEffect(() => setMobileOpen(false), [location]);
+  useEffect(() => {
+    const onPopState = () => setMobileOpen(false);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Award, Users, Heart, Globe, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
 import StatsSection from '../components/home/StatsSection';
 import CTASection from '../components/home/CTASection';

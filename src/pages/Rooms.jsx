@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Star, Maximize2, Users, ArrowRight } from 'lucide-react';
-import SectionTitle from '../components/common/SectionTitle';
 import CTASection from '../components/home/CTASection';
 import { rooms, ROOM_CATEGORIES } from '../data/roomsData';
 

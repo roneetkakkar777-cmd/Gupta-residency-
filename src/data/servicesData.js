@@ -1,5 +1,4 @@
 // ─── Services Data ────────────────────────────────────────────
-import { Waves, Utensils, Dumbbell, Sparkles, Music, Briefcase, Wine, Car } from 'lucide-react';
 
 export const services = [
   {

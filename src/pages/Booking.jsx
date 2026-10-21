@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { useLocation } from 'react-router-dom';
-import { Calendar, Users, BedDouble, CreditCard, Check, Info } from 'lucide-react';
-import SectionTitle from '../components/common/SectionTitle';
+import { Calendar, Users, CreditCard, Check, Info } from 'lucide-react';
 import { rooms } from '../data/roomsData';
 
 /* ── Booking Page ────────────────────────────────────────── */
@@ -19,7 +18,7 @@ const Booking = () => {
   tomorrowDate.setDate(tomorrowDate.getDate() + 1);
   const tomorrow = tomorrowDate.toISOString().split('T')[0];
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm({
+  const { register, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
       checkIn: prefill.checkIn || today,
       checkOut: prefill.checkOut || tomorrow,

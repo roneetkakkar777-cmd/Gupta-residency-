@@ -1,0 +1,8 @@
+{
+  "name": "Gupta Residency",
+  "description": "5-Star Luxury Hotel in Connaught Place, New Delhi with heritage suites, world-class dining, wellness experiences, and online reservations.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
